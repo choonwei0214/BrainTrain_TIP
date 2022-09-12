@@ -2,9 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink } from 'react-router-dom';
-import { BulbOutlined } from '@ant-design/icons';
-import { Avatar, Button } from 'antd';
+import { Avatar } from 'antd';
 import PersonalityCards from './PersonalityCards';
+import { TiTick } from 'react-icons/ti';
+import { AiOutlineCalendar,AiOutlineMenu } from 'react-icons/ai';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 const Personality = () => {
     return ( 
@@ -16,23 +18,17 @@ const Personality = () => {
                     </div>
                     <div className="profileMenu">
                         <h2 className="text-center">Pendejo, 3A1</h2>
-                        <div className="factOfTheDay text-center">
-                            <h5><BulbOutlined /> Fact of the day</h5>
-                            <p>The majority of your brain is fat. In fact, the human brian is nearly 60% fat.</p>
-                            <Button>Helpful</Button>
-                            <Button>Not helpful</Button>
-                        </div>
                         <div className="menu text-left">
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar">Calendar</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/">Habit tracker</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality">Personality</NavLink>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu/> Main menu</NavLink><br />
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar"><AiOutlineCalendar/> Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/habittracker"><TiTick/> Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality"><BsFillPersonFill />Personality</NavLink>
                         </div>
                     </div>
                 </Col>
                 <Col>
                     <div className="personalityText">Personality</div>
                     <div className="personalityBoard">
-                        <h2>Personality tests:</h2>
                         <PersonalityCards />
                     </div>
                 </Col>

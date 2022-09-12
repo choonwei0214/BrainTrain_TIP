@@ -2,7 +2,7 @@ import Table from 'react-bootstrap/Table';
 
 function BasicExample() {
     return (
-        <Table striped bordered hover>
+        <Table striped hover>
             <thead>
                 <tr>
                     <th>Date</th>

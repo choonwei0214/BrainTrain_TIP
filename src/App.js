@@ -10,6 +10,7 @@ import Survey3Result from './Survey3Result';
 import CalendarPage from './CalendarPage';
 import MBTI from './MBTI';
 import Survey2Result from './Survey2Result';
+import HabitTracker from './HabitTracker';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/calendar" element={<CalendarPage/>} />
             <Route path="/mbti" element={<MBTI/>} />
             <Route path="/survey2result" element={<Survey2Result/>} />
+            <Route path="/habittracker" element={<HabitTracker/>} />
           </Routes>
         </div>
       </div>

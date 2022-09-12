@@ -2,9 +2,9 @@ import { useLocation } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'antd';
-import auditory_img from './Images/auditory.png';
-import visual_img from './Images/visual.png';
-import kinesthetic_img from './Images/kinesthetic.png';
+import { AiFillEye } from 'react-icons/ai';
+import { IoEarOutline } from 'react-icons/io5';
+import { FaRunning } from 'react-icons/fa';
 
 const SurveyResult = (props) => {
     const location = useLocation();
@@ -69,12 +69,11 @@ const SurveyResult = (props) => {
 
     return (
         <div className="surveyresultpage">
-            <h3>Your results...</h3>
             <Row>
-                <Col>
-                    {idx === 0 && <div className='text-center'><img src={auditory_img} style={{ width: "300px", height: "155px" }} alt="auditory" /></div>}
-                    {idx === 1 && <div className='text-center'><img src={visual_img} style={{ width: "300px", height: "155px" }} alt="visual" /></div>}
-                    {idx === 2 && <div className='text-center'><img src={kinesthetic_img} style={{ width: "300px", height: "155px" }} alt="kinesthetic" /></div>}
+                <Col xs={4}>
+                    {idx === 0 && <div className='text-center'><IoEarOutline className="personality-icon"/></div>}
+                    {idx === 1 && <div className='text-center'><AiFillEye className='personality-icon'/></div>}
+                    {idx === 2 && <div className='text-center'><FaRunning className='personality-icon'/></div>}
                 </Col>
                 <Col>
                     <h2>You're a <span>
@@ -82,17 +81,14 @@ const SurveyResult = (props) => {
                         {idx === 1 && visual.type}
                         {idx === 2 && kinesthetic.type}
                     </span> learner!</h2>
+                    <h5>{idx === 0 && auditory.meaning}
+                        {idx === 1 && visual.meaning}
+                        {idx === 2 && kinesthetic.meaning}</h5>
                 </Col>
             </Row>
             <Row className="meaningrow">
-                <Col>
+                <Col xs={6}>
                     <div className="surveymeaning">
-                        <h3>The meaning:</h3>
-                        <h5>
-                            {idx === 0 && auditory.meaning}
-                            {idx === 1 && visual.meaning}
-                            {idx === 2 && kinesthetic.meaning}
-                        </h5>
                         <h3>Habits for optimal learning:</h3>
                         <h5>
                             {idx === 0 && <div>{auditory.habits.map((habit) => <li>{habit}</li>)}</div>}
@@ -114,6 +110,10 @@ const SurveyResult = (props) => {
                             {idx === 1 && <div>{visual.strengths.map((strength) => <li>{strength}</li>)}</div>}
                             {idx === 2 && <div>{kinesthetic.strengths.map((strength) => <li>{strength}</li>)}</div>}
                         </h5>
+                    </div>
+                </Col>
+                <Col>
+                    <div className="surveymeaning">
                         <h3>Your weaknesses:</h3>
                         <h5>
                             {idx === 0 && <div>{auditory.weaknesses.map((weakness) => <li>{weakness}</li>)}</div>}

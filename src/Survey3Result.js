@@ -1,10 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'antd';
-import lion_img from './Images/lion.png';
-import bear_img from './Images/bear.png';
-import wolf_img from './Images/wolf.png';
-import dolphin_img from './Images/dolphin.png';
+import { GiLion,GiBearFace,GiWolfHead,GiDolphin } from 'react-icons/gi';
 
 const Survey3Result = (props) => {
     let idx = Math.floor(Math.random() * 4)
@@ -52,13 +49,12 @@ const Survey3Result = (props) => {
 
     return (
         <div className="surveyresultpage">
-            <h3>Your results...</h3>
             <Row>
-                <Col>
-                    {idx === 0 && <div className='text-center'><img src={lion_img} style={{ width: "300px", height: "155px" }} alt="auditory" /></div>}
-                    {idx === 1 && <div className='text-center'><img src={bear_img} style={{ width: "300px", height: "155px" }} alt="visual" /></div>}
-                    {idx === 2 && <div className='text-center'><img src={wolf_img} style={{ width: "300px", height: "155px" }} alt="kinesthetic" /></div>}
-                    {idx === 3 && <div className='text-center'><img src={dolphin_img} style={{ width: "300px", height: "155px" }} alt="kinesthetic" /></div>}
+                <Col xs={4}>
+                    {idx === 0 && <div className='text-center'><GiLion className="personality-icon"/></div>}
+                    {idx === 1 && <div className='text-center'><GiBearFace className="personality-icon"/></div>}
+                    {idx === 2 && <div className='text-center'><GiWolfHead className="personality-icon"/></div>}
+                    {idx === 3 && <div className='text-center'><GiDolphin className="personality-icon"/></div>}
                 </Col>
                 <Col>
                     <h2>You're a <span>
@@ -67,18 +63,17 @@ const Survey3Result = (props) => {
                         {idx === 2 && wolf.type}
                         {idx === 3 && dolphin.type}
                     </span> learner!</h2>
+                    <h5>
+                        {idx === 0 && lion.meaning}
+                        {idx === 1 && bear.meaning}
+                        {idx === 2 && wolf.meaning}
+                        {idx === 3 && dolphin.meaning}
+                    </h5>
                 </Col>
             </Row>
             <Row className="meaningrow">
-                <Col>
+                <Col xs={6}>
                     <div className="surveymeaning">
-                        <h3>The meaning:</h3>
-                        <h5>
-                            {idx === 0 && lion.meaning}
-                            {idx === 1 && bear.meaning}
-                            {idx === 2 && wolf.meaning}
-                            {idx === 3 && dolphin.meaning}
-                        </h5>
                         <h3>Characteristics and traits:</h3>
                         <h5>
                             {idx === 0 && <div>{lion.traits.map((trait) => <li>{trait}</li>)}</div>}
@@ -102,6 +97,10 @@ const Survey3Result = (props) => {
                             {idx === 2 && <div>{wolf.ideal_schedule.map((schedule) => <li>{schedule}</li>)}</div>}
                             {idx === 3 && <div>{dolphin.ideal_schedule.map((schedule) => <li>{schedule}</li>)}</div>}
                         </h5>
+                    </div>
+                </Col>
+                <Col>
+                    <div className="surveymeaning">
                         <h3>Your weaknesses:</h3>
                         <h5>
                             {idx === 0 && <div>{lion.notes.map((note) => <li>{note}</li>)}</div>}

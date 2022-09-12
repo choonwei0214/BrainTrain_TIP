@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 const Calendar = () => {
     return (
         <div className="calendar">
-            <h2 className="text-center">September</h2>
+            <h2 className="text-center">Monday, Sept 12 - Friday, Sept 16</h2>
             <Row>
                 <Col sm={1}>
                     <div className="time text-center">

@@ -8,6 +8,9 @@ import ClassesCarousel from './ClassesCarousel';
 import GameCarousel from './GameCarousel';
 import Assignments from './Assignments';
 import TimeSpentChart from './TimeSpent';
+import { TiTick } from 'react-icons/ti';
+import { AiOutlineCalendar,AiOutlineMenu } from 'react-icons/ai';
+import { BsFillPersonFill } from 'react-icons/bs';
 
 const Home = () => {
     return (
@@ -26,9 +29,10 @@ const Home = () => {
                             <Button className="okay">Okay</Button>
                         </div>
                         <div className="menu text-left">
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar">Calendar</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/">Habit tracker</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality">Personality</NavLink>
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu/> Main menu</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality"><BsFillPersonFill />Personality</NavLink>
                         </div>
                     </div>
                     <div className="time_spent">
@@ -43,19 +47,15 @@ const Home = () => {
                 <Col>
                     <div className="welcomeText">Welcome back,<br></br>Pendejo!</div>
                     <div className="classes_games">
-                        <h2>View your classes: <Button className="viewall">View All <CaretDownOutlined/></Button></h2>
+                        <h2>View your classes: <Button className="viewall">View All <CaretDownOutlined /></Button></h2>
                         <ClassesCarousel />
                     </div>
                     <div className="classes_games classes_games_game">
-                        <h2>Join game: <Button className="viewall">View All <CaretDownOutlined/></Button></h2>
+                        <h2>Join game: <Button className="viewall">View All <CaretDownOutlined /></Button></h2>
                         <GameCarousel />
                     </div>
                     <div className="assignments">
-                        <h2>Upcoming assignments:</h2>
-                        <p>Sort by<Button
-                            type="text"
-                            icon={<CaretDownOutlined />}
-                        /></p>
+                        <h2>Upcoming assignments: <Button className="viewall">Sort By <CaretDownOutlined /></Button></h2>
                         <Assignments />
                     </div>
                 </Col>

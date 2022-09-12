@@ -9,7 +9,7 @@ const StartSurvey = () => {
         <div className="text-center beforesurvey">
             <h1>Welcome,</h1>
             <h1>let's find out your {data.name}.</h1>
-            <h5><ClockCircleOutlined /> {data.time}</h5>
+            <h5><ClockCircleOutlined /> Estimated Time to Complete: {data.time}</h5>
             { data.route === "learningstyle" && <Link to="/learningstyle"><button>Start</button></Link> }
             { data.route === "mbti" && <Link to="/mbti"><button>Start</button></Link> }
             { data.route === "chronotype" && <Link to="/chronotype"><button>Start</button></Link> }

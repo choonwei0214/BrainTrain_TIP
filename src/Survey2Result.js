@@ -28,9 +28,8 @@ const Survey2Result = (props) => {
 
     return (
         <div className="surveyresultpage">
-            <h3>Your results...</h3>
             <Row>
-                <Col>
+                <Col xs={4}>
                     {idx === 0 && <div className='text-center mbti-text' style={{color: "#88619a"}}>INFJ</div>}
                     {idx === 1 && <div className='text-center mbti-text' style={{color: "#33a474"}}>ENTP</div>}
                 </Col>
@@ -39,16 +38,15 @@ const Survey2Result = (props) => {
                         {idx === 0 && infj.type}
                         {idx === 1 && entp.type}
                     </span> !</h2>
-                </Col>
-            </Row>
-            <Row className="meaningrow">
-                <Col>
-                    <div className="surveymeaning">
-                        <h3>The meaning:</h3>
-                        <h5>
+                    <h5>
                             {idx === 0 && infj.meaning}
                             {idx === 1 && entp.meaning}
                         </h5>
+                </Col>
+            </Row>
+            <Row className="meaningrow">
+                <Col xs={6}>
+                    <div className="surveymeaning">
                         <h3>Learning traits:</h3>
                         <h5>
                             {idx === 0 && <div>{infj.traits.map((trait) => <li>{trait}</li>)}</div>}
@@ -68,6 +66,10 @@ const Survey2Result = (props) => {
                             {idx === 0 && <div>{infj.strengths.map((strength) => <li>{strength}</li>)}</div>}
                             {idx === 1 && <div>{entp.strengths.map((strength) => <li>{strength}</li>)}</div>}
                         </h5>
+                    </div>
+                </Col>
+                <Col>
+                    <div className="surveymeaning">
                         <h3>Your weaknesses:</h3>
                         <h5>
                             {idx === 0 && <div>{infj.weaknesses.map((weakness) => <li>{weakness}</li>)}</div>}
