@@ -189,6 +189,19 @@ code {
 
 .assignments button {
   border: none;
+  background-color: #2A292E;
+  margin-top: -30px;
+}
+
+.assignments button:hover {
+  border: none;
+  background-color: #2A292E !important;
+  float: right;
+}
+
+a.dropdown-item:active {
+  background-color: white;
+  color: black;
 }
 
 .personalityText {
@@ -203,7 +216,7 @@ code {
   margin-top: 10px;
   padding: 70px 30px;
   background-color: #F3F1F1;
-  height: 503.83px;
+  height: 570px;
 }
 
 .personalityCards .ant-card{
@@ -258,6 +271,7 @@ code {
   height: 35px;
   margin: 15px;
   border: none;
+  margin-bottom: 100px;
 }
 
 .surveyresultpage {
@@ -272,6 +286,10 @@ code {
   margin-top: -350px;
   color: white;
   font-size: 500%;
+}
+
+.personalityExp {
+  margin: 15px;
 }
 
 .surveyresultpage h2 {
@@ -412,7 +430,16 @@ code {
 
 .calendar .empty {
   height: 6.5%;
+  background-color: white;
 }
+
+.calendar .empty-last {
+  height: 6.5%;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 
 .calendar .eng-mon {
   height: 27%;
@@ -441,7 +468,7 @@ code {
 
 .calendar .chinese-wed {
   height: 27%;
-  background-color: #FFCF52;
+  background-color: #616B39;
 }
 
 .calendar .history-wed {
@@ -472,4 +499,158 @@ code {
 .calendar .e-math-fri {
   height: 17.75%;
   background-color: #9A2325;
+}
+
+.modal-header {
+  background-color: #2A292E;
+  color: white;
+}
+
+.modal-header h4 {
+  text-align: center;
+}
+
+.modal {
+  margin-top: 200px;
+}
+
+.modal button {
+  background-color: #73A767;
+}
+
+.modal button:hover {
+  background-color: #73A767;
+}
+
+.modal .btn-close {
+  display: none;
+}
+
+.modal h6 {
+  padding: 5px 0px;
+  margin: 0px auto;
+  width: 130px;
+  color: white;
+  border-radius: 20px;
+}
+
+.habittrackerBoard {
+  background-color: #F3F1F1;
+  border-top: 50px solid #2A292E;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.habittrackerBoard h2 {
+  color: white;
+  margin-top: -65px;
+  margin-bottom: 20px;
+}
+
+.meter {
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  width: 80%;
+  height: 12px;
+  margin: 40px 30px;
+}
+
+.meter2 {
+  background-color: #73A767;
+  color: white;
+  height: 12px;
+  width: 85%;
+  border-radius: 15px;
+}
+
+.habittrackerBoard .day {
+  margin: 0px 10px;
+  border-radius: 20px;
+  border-top: 40px solid #2A292E;
+  padding: 0 0;
+  background-color: white;
+}
+
+.habittrackerBoard h3 {
+  margin-top: -40px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  color: white;
+}
+
+.habit {
+  width: 35px;
+  height: 35px;
+  margin: 35px auto;
+  border-radius: 5px;
+}
+
+.habit-1 {
+  background-color: #EC9B00;
+}
+
+.habit-2 {
+  background-color: #96D1BD;
+}
+
+.habit-3 {
+  background-color: #9A2325;
+}
+
+.habit-4 {
+  background-color: #015D72;
+}
+
+.habit-5 {
+  background-color: #616B39;
+}
+
+.habit-e {
+  background-color: #D9D9D9;
+}
+
+.habittrackerBoard .habit-ind {
+  margin: 44px 0px;
+}
+
+.habit-ind li {
+  font-size: large;
+}
+
+.hab1 {
+  color: #EC9B00;
+}
+
+.hab2 {
+  color: #96D1BD;
+}
+
+.hab3 {
+  color: #9A2325;
+}
+
+.hab4 {
+  color: #015D72;
+}
+
+.hab5 {
+  color: #616B39;
+}
+
+.habit-ind span {
+  color: #A3A3A3;
+}
+
+.habit-meaning {
+  background-color: #D9D9D9;
+  height: 380px;
+  border-radius: 20px;
+}
+
+.addhabitbtn {
+  float: right;
+  margin-top: 40px;
+  border-radius: 60px !important;
+  background-color: #2A292E !important;
+  border: none !important;
 }

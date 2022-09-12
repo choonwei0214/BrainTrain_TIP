@@ -7,12 +7,17 @@ import { Avatar, Button } from 'antd';
 import ClassesCarousel from './ClassesCarousel';
 import GameCarousel from './GameCarousel';
 import Assignments from './Assignments';
+import Assignments2 from './Assignments2';
+import Assignments3 from './Assignments3';
 import TimeSpentChart from './TimeSpent';
 import { TiTick } from 'react-icons/ti';
-import { AiOutlineCalendar,AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineMenu } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const Home = () => {
+
+    const assSort = sessionStorage.getItem("assignmentSort")
     return (
         <Container className="dashboard">
             <Row>
@@ -29,7 +34,7 @@ const Home = () => {
                             <Button className="okay">Okay</Button>
                         </div>
                         <div className="menu text-left">
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu/> Main menu</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu /> Main menu</NavLink><br />
                             <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
                             <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
                             <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality"><BsFillPersonFill />Personality</NavLink>
@@ -55,8 +60,21 @@ const Home = () => {
                         <GameCarousel />
                     </div>
                     <div className="assignments">
-                        <h2>Upcoming assignments: <Button className="viewall">Sort By <CaretDownOutlined /></Button></h2>
-                        <Assignments />
+                        <h2>Upcoming assignments: <Dropdown>
+                            <Dropdown.Toggle className="viewall" id="dropdown-basic">
+                                Sort By
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item onClick={() => {sessionStorage.setItem("assignmentSort", "highest");window.location.reload(false)}}>Highest weightage</Dropdown.Item>
+                                <Dropdown.Item onClick={() => {sessionStorage.setItem("assignmentSort", "lowest");window.location.reload(false)}}>Lowest weightage</Dropdown.Item>
+                                <Dropdown.Item onClick={() => {sessionStorage.setItem("assignmentSort", "date");window.location.reload(false)}}>Date</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown></h2>
+                        {assSort === null && <Assignments />}
+                        {assSort === "highest" && <Assignments2 />}
+                        {assSort === "lowest" && <Assignments3 />}
+                        {assSort === "date" && <Assignments />}
                     </div>
                 </Col>
             </Row>

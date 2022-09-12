@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 
-function Assignments() {
+function Assignments3() {
     return (
         <Table striped hover>
             <thead>
@@ -17,11 +17,6 @@ function Assignments() {
                     <td>10%</td>
                 </tr>
                 <tr>
-                    <td>12/9/2022</td>
-                    <td>History section B</td>
-                    <td>20%</td>
-                </tr>
-                <tr>
                     <td>13/9/2022</td>
                     <td>E Math practice questions</td>
                     <td>10%</td>
@@ -31,9 +26,14 @@ function Assignments() {
                     <td>Chinese composition revision paper</td>
                     <td>10%</td>
                 </tr>
+                <tr>
+                    <td>12/9/2022</td>
+                    <td>History section B</td>
+                    <td>20%</td>
+                </tr>
             </tbody>
         </Table>
     );
 }
 
-export default Assignments;
+export default Assignments3;
