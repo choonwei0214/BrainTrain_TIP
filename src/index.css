@@ -11,3 +11,388 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  background-color: #FF611A;
+  height: 80px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+
+.navbar a:hover {
+  color: #2A292E;
+}
+
+.dashboard {
+  margin-top: 50px;
+}
+
+.welcomeText {
+  font-size: 300%;
+  font-style: bold;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.profile img {
+  border-radius: 50%;
+  border: 2px solid gray;
+  width: 200px;
+}
+
+.profileMenu {
+  border: 2px solid #2A292E;
+  padding-top: 100px;
+  margin-top: -100px;
+  padding-bottom: 50px;
+  background-color: #F3F1F1;
+  border-radius: 60px;
+}
+
+.factOfTheDay {
+  margin: 20px auto;
+  padding: 15px 15px;
+  border: 1px solid gray;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  border-top: 20px solid #FF7E3A;
+}
+
+.profileMenu button {
+  width: 90px;
+  margin: 4px;
+  font-size: 80%;
+  background-color: #FF7E3A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.menu a {
+  color: #2A292E;
+  text-decoration: none;
+  font-size: 120%;
+  margin-left: 60px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #FF7E3A;
+}
+
+.classes_games {
+  border: 2px solid #2A292E;
+  border-radius: 60px;
+  margin-top: 6px;
+  padding: 30px 30px;
+  background-color: #F3F1F1;
+}
+
+.classes_games .card {
+  width: 140px;
+  height: 180px;
+  margin: 20px 0px;
+  border-radius: 20px;
+  color: white;
+}
+
+.classes_games .card-title {
+  margin: 50px auto 10px auto;
+}
+
+.classes_games .card-text {
+  margin: 15px auto 0px auto;
+  font-size: 80%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7E3A' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7E3A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.time_spent {
+  border: 2px solid #2A292E;
+  border-radius: 60px;
+  margin-top: 25px;
+  height: 592px;
+  background-color: #F3F1F1;
+  padding: 40px;
+}
+
+.time_spent button {
+  border: none;
+}
+
+.assignments {
+  border: 2px solid #2A292E;
+  border-radius: 60px;
+  margin-top: 25px;
+  height: 500px;
+  background-color: #F3F1F1;
+  padding: 40px;
+}
+
+.assignments button {
+  border: none;
+}
+
+.personalityText {
+  font-size: 300%;
+  font-style: bold;
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.personalityBoard {
+  border: 2px solid #2A292E;
+  border-radius: 60px;
+  margin-top: 10px;
+  padding: 30px 30px;
+  background-color: #F3F1F1;
+  height: 503.83px;
+}
+
+.personalityCards .ant-card{
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  padding: 15px 10px;
+  margin-top: 15px;
+  height: 350px;
+}
+
+.personalityCards {
+  padding: 0px 60px;
+}
+
+.personalityCards button {
+  width: 90px;
+  margin: 4px;
+  font-size: 80%;
+  background-color: #FF7E3A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.personalityCards .personalityImg {
+  height: 200px;
+}
+
+.surveys {
+  margin: 100px 100px;
+}
+
+.surveys .ant-radio-group {
+  margin-top: 100px;
+  line-height: 100px;
+}
+
+.surveys span {
+  font-size: 25px;
+}
+
+.surveyBtn button {
+  background-color: #FF7E3A;
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  height: 35px;
+  margin: 15px;
+  border: none;
+}
+
+.surveyresultpage {
+  margin: 50px 100px;
+}
+
+.surveyresultpage h2 {
+  margin: 50px auto;
+}
+
+.surveyresultpage .surveymeaning {
+  border: 2px solid #2A292E;
+  height: 60vh;
+  margin: 0px 0px;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.surveyresultpage span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.surveyresultpage .meaningrow {
+  margin: 0px 50px;
+}
+
+.surveyresultpage h3 {
+  margin: 10px auto;
+}
+
+.beforesurvey {
+  margin: 200px auto;
+}
+
+.beforesurvey button {
+  background-color: #FF7E3A;
+  border-radius: 20px;
+  color: white;
+  width: 150px;
+  height: 35px;
+  margin: 15px;
+  border: none;
+}
+
+.feedbackBtn {
+  margin-top: 40px;
+}
+
+.feedbackBtn button {
+  margin: 0px 10px;
+  border-radius: 20px;
+  width: 50px;
+}
+
+.feedbackBtn span {
+  text-decoration: none;
+}
+
+.feedbackBtn .feedbackYes {
+  background-color: #D9F8C4;
+}
+
+.feedbackBtn .feedbackNo {
+  background-color: #F37878;
+}
+
+.mbti-text {
+  font-size: 500%;
+  font-weight: bold;
+}
+
+.calendar {
+  border: 2px solid black;
+  border-top: 50px solid #FF7E3A;
+  border-radius: 20px;
+  height: 520px;
+  padding: 20px;
+}
+
+.calendar h2 {
+  color: white;
+  margin-top: -65px;
+  margin-bottom: 20px;
+}
+
+.calendar h3 {
+  margin-top: -40px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.calendar .row {
+  height: 100%;
+}
+
+.calendar .time {
+  height: 100%;
+  line-height: 41px;
+  padding-top: 50px;
+}
+
+.calendar .day {
+  margin: 0px 10px;
+  border-radius: 20px;
+  border-top: 55px solid #D9D9D9;
+  padding: 0 0;
+}
+
+.calendar .subject {
+  color: white;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.calendar p {
+  margin-bottom: 0px;
+}
+
+.calendar .e-math-mon {
+  height: 27%;
+  background-color: #FF5C5D;
+}
+
+.calendar .empty {
+  height: 6.5%;
+}
+
+.calendar .eng-mon {
+  height: 27%;
+  background-color: #0068FD;
+}
+
+.calendar .chem-mon {
+  height: 22%;
+  background-color: #1FCF6A;
+}
+
+.calendar .eng-tue {
+  height: 13.5%;
+  background-color: #0068FD;
+}
+
+.calendar .chem-tue {
+  height: 13.5%;
+  background-color: #1FCF6A;
+}
+
+.calendar .history-tue {
+  height: 35.5%;
+  background-color: #FE8439;
+}
+
+.calendar .chinese-wed {
+  height: 27%;
+  background-color: #FFCF52;
+}
+
+.calendar .history-wed {
+  height: 17.75%;
+  background-color: #FE8439;
+}
+
+.calendar .eng-wed {
+  height: 17.75%;
+  background-color: #0068FD;
+}
+
+.calendar .e-math-thu {
+  height: 27%;
+  background-color: #FF5C5D;
+}
+
+.calendar .chem-thu {
+  height: 35.5%;
+  background-color: #1FCF6A;
+}
+
+.calendar .chinese-fri {
+  height: 27%;
+  background-color: #FFCF52;
+}
+
+.calendar .e-math-fri {
+  height: 17.75%;
+  background-color: #FF5C5D;
+}

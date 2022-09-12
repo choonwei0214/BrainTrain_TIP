@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import LearningStyle from './LearningStyle';
+import Navbar from './Navbar';
+import Personality from './Personality';
+import StartSurvey from './StartSurvey';
+import SurveyResult from './SurveyResult';
+import Chronotype from './Chronotype';
+import Survey3Result from './Survey3Result';
+import CalendarPage from './CalendarPage';
+import MBTI from './MBTI';
+import Survey2Result from './Survey2Result';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/personality" element={<Personality/>} />
+            <Route path="/learningstyle" element={<LearningStyle/>} />
+            <Route path="/surveyresult" element={<SurveyResult/>} />
+            <Route path="/startsurvey" element={<StartSurvey/>} />
+            <Route path="/chronotype" element={<Chronotype/>} />
+            <Route path="/survey3result" element={<Survey3Result/>} />
+            <Route path="/calendar" element={<CalendarPage/>} />
+            <Route path="/mbti" element={<MBTI/>} />
+            <Route path="/survey2result" element={<Survey2Result/>} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
