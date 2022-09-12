@@ -23,9 +23,9 @@ const Personality = () => {
                             <Button>Not helpful</Button>
                         </div>
                         <div className="menu text-left">
-                            <NavLink to="/calendar">Calendar</NavLink><br />
-                            <NavLink to="/">Habit tracker</NavLink><br />
-                            <NavLink to="/personality">Personality</NavLink>
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar">Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/">Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality">Personality</NavLink>
                         </div>
                     </div>
                 </Col>

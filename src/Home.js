@@ -21,14 +21,14 @@ const Home = () => {
                         <h2 className="text-center">Pendejo, 3A1</h2>
                         <div className="factOfTheDay text-center">
                             <h5><BulbOutlined /> Fact of the day</h5>
-                            <p>The majority of your brain is fat. In fact, the human brian is nearly 60% fat.</p>
-                            <Button>Helpful</Button>
-                            <Button>Not helpful</Button>
+                            <p>The majority of your brain is fat. In fact, the human brain is nearly 60% fat.</p>
+                            <Button className="nice">Nice</Button>
+                            <Button className="okay">Okay</Button>
                         </div>
                         <div className="menu text-left">
-                            <NavLink to="/calendar">Calendar</NavLink><br />
-                            <NavLink to="/">Habit tracker</NavLink><br />
-                            <NavLink to="/personality">Personality</NavLink>
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar">Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/">Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality">Personality</NavLink>
                         </div>
                     </div>
                     <div className="time_spent">
@@ -43,9 +43,11 @@ const Home = () => {
                 <Col>
                     <div className="welcomeText">Welcome back,<br></br>Pendejo!</div>
                     <div className="classes_games">
-                        <h2>View your classes:</h2>
+                        <h2>View your classes: <Button className="viewall">View All <CaretDownOutlined/></Button></h2>
                         <ClassesCarousel />
-                        <h2>Join game:</h2>
+                    </div>
+                    <div className="classes_games classes_games_game">
+                        <h2>Join game: <Button className="viewall">View All <CaretDownOutlined/></Button></h2>
                         <GameCarousel />
                     </div>
                     <div className="assignments">

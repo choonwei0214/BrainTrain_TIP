@@ -19,7 +19,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/personality" element={<Personality/>} />
+            <Route style={({ isActive }) => ({ color: isActive ? "orange" : "red" })} path="/personality" element={<Personality/>} />
             <Route path="/learningstyle" element={<LearningStyle/>} />
             <Route path="/surveyresult" element={<SurveyResult/>} />
             <Route path="/startsurvey" element={<StartSurvey/>} />

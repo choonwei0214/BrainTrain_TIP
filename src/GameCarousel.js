@@ -8,7 +8,7 @@ const games = [
 const GameCarousel = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel interval={null}>
                 {games.map((game_name) => (
                     <Carousel.Item>
                         <Stack
