@@ -3,6 +3,8 @@ import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
+import { Input } from 'antd';
+const { TextArea } = Input;
 
 const Calendar = () => {
 
@@ -63,14 +65,17 @@ const Calendar = () => {
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#9A2325" }}>E Math</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#015D72" }}>English</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#96D1BD" }}>Chemistry</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
@@ -114,14 +119,17 @@ const Calendar = () => {
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#015D72" }}>English</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#96D1BD" }}>Chemistry</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#EC9B00" }}>History</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
@@ -165,14 +173,17 @@ const Calendar = () => {
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#616B39" }}>Chinese</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#EC9B00" }}>History</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#015D72" }}>English</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
@@ -213,10 +224,12 @@ const Calendar = () => {
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#9A2325" }}>E Math</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#96D1BD" }}>Chemistry</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>
@@ -265,10 +278,12 @@ const Calendar = () => {
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#616B39" }}>Chinese</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                             <div className='text-center'>
                                 <h6 style={{ backgroundColor: "#9A2325" }}>E Math</h6>
                                 <p>help type tips plz</p>
+                                <TextArea style={{"margin-bottom": "20px"}} rows={3} placeholder="Write your feedback"/>
                             </div>
                         </Modal.Body>
                         <Modal.Footer>

@@ -27,26 +27,26 @@ const Home = () => {
                     </div>
                     <div className="profileMenu">
                         <h2 className="text-center">John Tan, 3A1</h2>
-                        <div className="factOfTheDay text-center">
+                        <div className="menu text-left">
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/"><AiOutlineMenu /> Dashboard</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/personality"><BsFillPersonFill /> Personality</NavLink>
+                        </div>
+                    </div>
+                    <div className="factOfTheDay text-center">
                             <h5><BulbOutlined /> Fact of the day</h5>
                             <p>The majority of your brain is fat. In fact, the human brain is nearly 60% fat.</p>
                             <Button className="nice">Nice</Button>
                             <Button className="okay">Okay</Button>
                         </div>
-                        <div className="menu text-left">
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu /> Main menu</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/personality"><BsFillPersonFill />Personality</NavLink>
-                        </div>
-                    </div>
                     <div className="time_spent">
                         <h2>Time spent:</h2>
                         <p>Sort by<Button
                             type="text"
                             icon={<CaretDownOutlined />}
                         /></p>
-                        <div id="chart"><TimeSpentChart /></div>
+                        <div id="chart"><TimeSpentChart /><div>1 hr 14 mins in class<br />12mins more than yesterday</div></div>
                     </div>
                 </Col>
                 <Col>

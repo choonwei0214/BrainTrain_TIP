@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Radio, Space } from 'antd';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 const MBTI = () => {
     const [count, setCount] = useState(0);
@@ -977,8 +978,8 @@ const MBTI = () => {
         }
         <div className="text-center">
 
-            {count > 0 && <button onClick={() => setCount(count - 1)}>Previous</button>}
-            {count < components.length - 1 && <button onClick={() => setCount(count + 1)}>Next</button>}
+            {count > 0 && <button onClick={() => setCount(count - 1)}><AiOutlineArrowLeft/></button>}
+            {count < components.length - 1 && <button onClick={() => setCount(count + 1)}><AiOutlineArrowRight/></button>}
             {count === components.length - 1 && <Link to="/survey2result" state={[value, value2, value3, value4, value5, value6, value7, value8, value9, value10, value11, value12, value13, value14, value15, value16, value17, value18, value19, value20]}><button>Submit</button></Link>}
         </div>
     </div>

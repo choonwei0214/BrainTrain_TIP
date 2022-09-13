@@ -101,7 +101,7 @@ const Survey3Result = (props) => {
                 </Col>
                 <Col>
                     <div className="surveymeaning">
-                        <h3>Your weaknesses:</h3>
+                        <h3>Things to note:</h3>
                         <h5>
                             {idx === 0 && <div>{lion.notes.map((note) => <li>{note}</li>)}</div>}
                             {idx === 1 && <div>{bear.notes.map((note) => <li>{note}</li>)}</div>}

@@ -3,24 +3,24 @@ import { Pie } from '@ant-design/plots';
 const TimeSpentChart = () => {
     const data = [
         {
-          type: 'E Math',
-          value: 8,
+          type: 'SLS (Productivity)',
+          value: 25,
         },
         {
-          type: 'Chinese',
-          value: 6,
+          type: 'Youtube (Entertainment)',
+          value: 13,
         },
         {
-          type: 'Chemistry',
-          value: 2,
+          type: 'Google Chrome (News and Information)',
+          value: 11,
         },
         {
-          type: 'English',
-          value: 2.5,
+          type: 'Others',
+          value: 7,
         },
         {
-          type: 'Physics',
-          value: 4,
+          type: 'Google Classroom (Productivity)',
+          value: 18,
         },
       ];
       const config = {
