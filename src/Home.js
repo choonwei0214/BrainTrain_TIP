@@ -26,7 +26,7 @@ const Home = () => {
                         <Avatar style={{ width: 15 }} src="https://joeschmoe.io/api/v1/random" />
                     </div>
                     <div className="profileMenu">
-                        <h2 className="text-center">Pendejo, 3A1</h2>
+                        <h2 className="text-center">John Tan, 3A1</h2>
                         <div className="factOfTheDay text-center">
                             <h5><BulbOutlined /> Fact of the day</h5>
                             <p>The majority of your brain is fat. In fact, the human brain is nearly 60% fat.</p>
@@ -50,7 +50,7 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col>
-                    <div className="welcomeText">Welcome back,<br></br>Pendejo!</div>
+                    <div className="welcomeText">Welcome back,<br></br>John Tan!</div>
                     <div className="classes_games">
                         <h2>View your classes: <Button className="viewall">View All <CaretDownOutlined /></Button></h2>
                         <ClassesCarousel />

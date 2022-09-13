@@ -8,7 +8,7 @@ import { FaPeopleArrows } from 'react-icons/fa';
 
 const classes = [
     { _id: 1, name: ['E MATH', 'ENGLISH', 'CHEMISTRY', 'HISTORY'], color: ['#9A2325','#015D72','#96D1BD','#EC9B00'], icons:[<CalculatorOutlined />,<FontColorsOutlined />,<GiChemicalDrop/>,<MdHistoryEdu/>], date: ["Monday 12/9", "Monday 12/9", "Monday 12/9", "Monday 12/9"], time: ["0800-0900", "0900-1000", "1030-1130", "1130-1230"] },
-    { _id: 2, name: ['PHYSICS', 'BIOLOGY', 'CHINESE', 'GEOGRAPHY'], color: ["#EC9B00","#119DA4","#616B39","#63458A"], icons:[<GiAtom/>,<RiPlantLine/>,<TranslationOutlined />,<GlobalOutlined />], date: ["Monday 12/9", "Tuesday 13/9", "Tuesday 13/9", "Tuesday 13/9"], time: ["1300-1400", "0800-0900", "0900-1000", "1030-1130"] },
+    { _id: 2, name: ['PHYSICS', 'BIOLOGY', 'CHINESE', 'GEOGRAPHY'], color: ["#475B5A","#119DA4","#616B39","#63458A"], icons:[<GiAtom/>,<RiPlantLine/>,<TranslationOutlined />,<GlobalOutlined />], date: ["Monday 12/9", "Tuesday 13/9", "Tuesday 13/9", "Tuesday 13/9"], time: ["1300-1400", "0800-0900", "0900-1000", "1030-1130"] },
     { _id: 3, name: ['SCIENCE', 'ART', 'MUSIC', 'SOCIAL STUDIES'], color: ["#C37D92","#00BBF9","#F15BB5","#9B5DE5"], icons:[<MdOutlineScience/>,<MdDraw/>,<BiMusic/>,<FaPeopleArrows/>], date: ["Tuesday 13/9", "Tuesday 13/9", "Wednesday 14/9", "Wednesday 14/9"], time: ["1130-1230", "1300-1400", "0800-0900", "0900-1000"] }
 ];
 

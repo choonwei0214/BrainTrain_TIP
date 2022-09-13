@@ -17,7 +17,7 @@ const HabitTracker = () => {
                         <Avatar style={{ width: 15 }} src="https://joeschmoe.io/api/v1/random" />
                     </div>
                     <div className="profileMenu">
-                        <h2 className="text-center">Pendejo, 3A1</h2>
+                        <h2 className="text-center">John Tan, 3A1</h2>
                         <div className="menu text-left">
                             <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/"><AiOutlineMenu /> Main menu</NavLink><br />
                             <NavLink style={({ isActive }) => ({ color: isActive ? "black" : "gray" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
