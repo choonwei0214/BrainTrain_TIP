@@ -73,54 +73,6 @@ const HabitTracker = () => {
         }
     };
 
-    const onChange8 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit8", "Habit 8")
-        } else {
-            localStorage.removeItem("habit8");
-        }
-    };
-
-    const onChange9 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit9", "Habit 9")
-        } else {
-            localStorage.removeItem("habit9");
-        }
-    };
-
-    const onChange10 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit10", "Habit 10")
-        } else {
-            localStorage.removeItem("habit10");
-        }
-    };
-
-    const onChange11 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit11", "Habit 11")
-        } else {
-            localStorage.removeItem("habit11");
-        }
-    };
-
-    const onChange12 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit12", "Habit 12")
-        } else {
-            localStorage.removeItem("habit12");
-        }
-    };
-
-    const onChange13 = (e) => {
-        if (e.target.checked === true) {
-            sessionStorage.setItem("habit13", "Habit 13")
-        } else {
-            localStorage.removeItem("habit13");
-        }
-    };
-
     const learningstyle = sessionStorage.getItem("learningstyle")
     const mbti = sessionStorage.getItem("mbti")
     const chronotype = sessionStorage.getItem("chronotype")
@@ -132,12 +84,6 @@ const HabitTracker = () => {
     const habit_5 = sessionStorage.getItem("habit5")
     const habit_6 = sessionStorage.getItem("habit6")
     const habit_7 = sessionStorage.getItem("habit7")
-    const habit_8 = sessionStorage.getItem("habit8")
-    const habit_9 = sessionStorage.getItem("habit9")
-    const habit_10 = sessionStorage.getItem("habit10")
-    const habit_11 = sessionStorage.getItem("habit11")
-    const habit_12 = sessionStorage.getItem("habit12")
-    const habit_13 = sessionStorage.getItem("habit13")
 
 
     const habitClick = (e) => {
@@ -173,19 +119,13 @@ const HabitTracker = () => {
                         </Modal.Header>
                         <Modal.Body>
                             <h3>Habit List:</h3>
-                            {chronotype === "Bear" && <div><Checkbox id="habit1" onChange={onChange1}> Have a power nap of up to 20 mins</Checkbox></div>}
-                            {learningstyle === "Auditory" && <div><Checkbox id="habit2" onChange={onChange2}> Participate in class discussion</Checkbox></div>}
-                            {chronotype === "Bear" && <div><Checkbox id="habit3" onChange={onChange3}> Exercise at the school gym</Checkbox></div>}
-                            {learningstyle === "Auditory" && <div><Checkbox id="habit4" onChange={onChange4}> Draw out a mind map for a certain topic's notes</Checkbox></div>}
-                            {chronotype === "Bear" && <div><Checkbox id="habit5" onChange={onChange5}> No usage of apps that are not productive</Checkbox></div>}
-                            {chronotype === "Bear" && <div><Checkbox id="habit6" onChange={onChange6}> Read a book</Checkbox></div>}
-                            {chronotype === "Bear" && <div><Checkbox id="habit7" onChange={onChange7}> Write down 2 to 3 things you have learnt</Checkbox></div>}
-                            {learningstyle === "Auditory" && <div><Checkbox id="habit8" onChange={onChange8}> Repeat what I have learnt at least 5 times</Checkbox></div>}
-                            {chronotype === "Bear" && <div><Checkbox id="habit9" onChange={onChange9}> No usage of device by 2300</Checkbox></div>}
-                            {mbti === "INFJ" && <div><Checkbox id="habit10" onChange={onChange10}> Create associations between content taught</Checkbox></div>}
-                            {mbti === "INFJ" && <div><Checkbox id="habit11" onChange={onChange11}> Study/do homework at library</Checkbox></div>}
-                            {mbti === "INFJ" && <div><Checkbox id="habit12" onChange={onChange12}> Make associations to topic you do not understand</Checkbox></div>}
-                            {mbti === "INFJ" && <div><Checkbox id="habit13" onChange={onChange13}> Start with Chinese (Hardest subject)</Checkbox></div>}
+                            {chronotype === "Wolf" && <div><Checkbox id="habit1" onChange={onChange1}> If you feel sleepy, quickly go and wash your face with some cold water</Checkbox></div>}
+                            {learningstyle === "Auditory" && <div><Checkbox id="habit2" onChange={onChange2}> Read out important part of your notes if you have to do so</Checkbox></div>}
+                            {learningstyle === "Auditory" && <div><Checkbox id="habit3" onChange={onChange3}> Record important parts of the lessons, especially if the content taught is important</Checkbox></div>}
+                            {mbti === "INFJ" && <div><Checkbox id="habit4" onChange={onChange4}> Reminder to use the PLDs to ask questions through the use of padlet</Checkbox></div>}
+                            {mbti === "INFJ" && <div><Checkbox id="habit5" onChange={onChange5}> Review past assignments</Checkbox></div>}
+                            {mbti === "INFJ" && <div><Checkbox id="habit6" onChange={onChange6}> Make associations with the content taught in the lesson</Checkbox></div>}
+                            {mbti === "INFJ" && <div><Checkbox id="habit7" onChange={onChange7}> Create mental maps in your notes</Checkbox></div>}
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={handleCloseHabit}>
@@ -222,43 +162,25 @@ const HabitTracker = () => {
                                     <li className='hab5'><span>Habit 5</span></li>
                                 </div> */}
                                 {habit_1 === "Habit 1" && <div className='habit-ind'>
-                                    <span>Have a power nap of up to 20 mins</span>
+                                    <span>If you feel sleepy, quickly go and wash your face with some cold water</span>
                                 </div>}
                                 {habit_2 === "Habit 2" && <div className='habit-ind'>
-                                    <span>Participate in class discussion</span>
+                                    <span>Read out important part of your notes if you have to do so</span>
                                 </div>}
                                 {habit_3 === "Habit 3" && <div className='habit-ind'>
-                                    <span>Exercise at the school gym</span>
+                                    <span>Record important parts of the lessons, especially if the content taught is important</span>
                                 </div>}
                                 {habit_4 === "Habit 4" && <div className='habit-ind'>
-                                    <span>Draw out a mind map for a certain topic's notes</span>
+                                    <span>Reminder to use the PLDs to ask questions through the use of padlet</span>
                                 </div>}
                                 {habit_5 === "Habit 5" && <div className='habit-ind'>
-                                    <span>No usage of apps that are not productive</span>
+                                    <span>Review past assignments</span>
                                 </div>}
                                 {habit_6 === "Habit 6" && <div className='habit-ind'>
-                                    <span>Read a book</span>
+                                    <span>Make associations with the content taught in the lesson</span>
                                 </div>}
                                 {habit_7 === "Habit 7" && <div className='habit-ind'>
-                                    <span>Write down 2 to 3 things you have learnt</span>
-                                </div>}
-                                {habit_8 === "Habit 8" && <div className='habit-ind'>
-                                    <span>Repeat what I have learnt at least 5 times</span>
-                                </div>}
-                                {habit_9 === "Habit 9" && <div className='habit-ind'>
-                                    <span>No usage of device by 2300</span>
-                                </div>}
-                                {habit_10 === "Habit 10" && <div className='habit-ind'>
-                                    <span>Create associations between content taught</span>
-                                </div>}
-                                {habit_11 === "Habit 11" && <div className='habit-ind'>
-                                    <span>Study/do homework at library</span>
-                                </div>}
-                                {habit_12 === "Habit 12" && <div className='habit-ind'>
-                                    <span>Make associations to topic you do not understand</span>
-                                </div>}
-                                {habit_13 === "Habit 13" && <div className='habit-ind'>
-                                    <span>Start with Chinese (Hardest subject)</span>
+                                    <span>Create mental maps in your notes</span>
                                 </div>}
                             </Col>
                             <Col className="text-center day">
@@ -275,12 +197,6 @@ const HabitTracker = () => {
                                 {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_8 === "Habit 8" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_9 === "Habit 9" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_10 === "Habit 10" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_11 === "Habit 11" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_12 === "Habit 12" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_13 === "Habit 13" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Tue</h3>
@@ -296,12 +212,6 @@ const HabitTracker = () => {
                                 {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_8 === "Habit 8" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_9 === "Habit 9" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_10 === "Habit 10" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_11 === "Habit 11" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_12 === "Habit 12" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_13 === "Habit 13" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Wed</h3>
@@ -317,12 +227,6 @@ const HabitTracker = () => {
                                 {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_8 === "Habit 8" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_9 === "Habit 9" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_10 === "Habit 10" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_11 === "Habit 11" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_12 === "Habit 12" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_13 === "Habit 13" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Thu</h3>
@@ -338,12 +242,6 @@ const HabitTracker = () => {
                                 {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_8 === "Habit 8" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_9 === "Habit 9" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_10 === "Habit 10" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_11 === "Habit 11" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_12 === "Habit 12" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_13 === "Habit 13" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Fri</h3>
@@ -359,12 +257,6 @@ const HabitTracker = () => {
                                 {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
                                 {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_8 === "Habit 8" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_9 === "Habit 9" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_10 === "Habit 10" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_11 === "Habit 11" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_12 === "Habit 12" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
-                                {habit_13 === "Habit 13" && <div className='habit habit-4 mbtiicon' onClick={habitClick}></div>}
                             </Col>
                         </Row>
                     </div>

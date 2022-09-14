@@ -24,10 +24,9 @@ code {
   font-size: 50px;
 }
 
-.navbar a:hover {
-  color: black;
+.navbar img {
+  padding-bottom: 20px;
 }
-
 .dashboard {
   margin-top: 50px;
 }
@@ -107,7 +106,7 @@ button.okay {
   margin-top: 6px;
   padding: 30px 30px;
   background-color: #F3F1F1;
-  border-top: 60px solid #669282;
+  border-top: 60px solid #004A2F;
 }
 
 .classes_games_game {
@@ -125,7 +124,7 @@ button.okay {
   float: right;
   font-size: 50%;
   padding-top: 20px;
-  background-color: #669282;
+  background-color: #004A2F;
   border: none;
 }
 
@@ -183,7 +182,7 @@ button.okay {
   margin-top: 25px;
   padding: 30px 30px;
   background-color: #F3F1F1;
-  border-top: 60px solid #669282;
+  border-top: 60px solid #004A2F;
 }
 
 .assignments h2 {
@@ -194,7 +193,7 @@ button.okay {
 
 .assignments button {
   border: none;
-  background-color: #669282;
+  background-color: #004A2F;
   margin-top: -30px;
 }
 
@@ -272,7 +271,7 @@ a.dropdown-item:active {
   width: 90px;
   margin: 4px;
   font-size: 80%;
-  background-color: #669282;
+  background-color: #004A2F;
   color: white;
   border: none;
   border-radius: 20px;
@@ -296,7 +295,7 @@ a.dropdown-item:active {
 }
 
 .surveyBtn button {
-  background-color: #669282;
+  background-color: #004A2F;
   border-radius: 20px;
   color: white;
   width: 150px;
@@ -370,7 +369,7 @@ a.dropdown-item:active {
 }
 
 .beforesurvey button {
-  background-color: #669282;
+  background-color: #004A2F;
   border-radius: 20px;
   color: white;
   width: 150px;
@@ -408,7 +407,7 @@ a.dropdown-item:active {
 }
 
 .calendar {
-  border-top: 50px solid #669282;
+  border-top: 50px solid #004A2F;
   border-radius: 20px;
   height: 520px;
   padding: 20px;
@@ -441,7 +440,7 @@ a.dropdown-item:active {
 .calendar .day {
   margin: 0px 10px;
   border-radius: 20px;
-  border-top: 55px solid #669282;
+  border-top: 55px solid #004A2F;
   padding: 0 0;
 }
 
@@ -568,7 +567,7 @@ a.dropdown-item:active {
 
 .habittrackerBoard {
   background-color: #F3F1F1;
-  border-top: 50px solid #669282;
+  border-top: 50px solid #004A2F;
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 50px;
@@ -599,7 +598,7 @@ a.dropdown-item:active {
 .habittrackerBoard .day {
   margin: 0px 10px;
   border-radius: 20px;
-  border-top: 40px solid #669282;
+  border-top: 40px solid #004A2F;
   padding: 0 0;
   background-color: white;
 }
@@ -717,12 +716,11 @@ span.habit-ind {
   border: 3px solid white;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   margin: 50px auto;
   width: 60%;
-  height: 600px;
+  height: 700px;
   border: 1px solid #f1f1f1;
 }
 
@@ -736,6 +734,24 @@ span.habit-ind {
   transform-style: preserve-3d;
 }
 
+.flip-card-inner button {
+  color: #004A2F;
+  font-weight: bold;
+  font-size: 150%;
+  border: none;
+  background-color: #E7E7E7;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.idealschedule {
+  background-color: #004A2F;
+  margin: 5px 50px;
+  border-radius: 20px;
+  padding: 0px;
+  color: white;
+}
+
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -747,13 +763,136 @@ span.habit-ind {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #E7E7E7;
+  border-radius: 20px;
+  border: 2px solid #004A2F;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #E7E7E7;
+  color: black;
   transform: rotateY(180deg);
+  border-radius: 20px;
+  border: 2px solid #004A2F;
+}
+
+.css-18y2uza-MuiTypography-root-MuiTimelineContent-root, .css-17rm008-MuiTypography-root-MuiTimelineOppositeContent-root {
+  font-size: 1.2rem !important;
+}
+
+.flip-card-icon {
+  color: #004A2F;
+  font-size: 1000%;
+  background-color: #E7E7E7;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.flip-card-def {
+  background-color: #004A2F;
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.flip-card-char, .flip-card-ttn {
+  background-color: #004A2F;
+  color: white;
+  height: 40%;
+  margin: 20px 10px;
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.survery1result {
+  width: 90%;
+  margin: 300px auto;
+}
+
+.survey1result-icon {
+  background-color: #004A2F;
+  width: 675px;
+  height: 400px;
+  margin: 150px 0px 0px auto;
+  color: white;
+  font-size: 1500%;
+  border-radius: 25px;
+}
+
+.survey1result-type {
+  color: #004A2F;
+  font-size: 400%;
+  margin: 150px auto 0px auto;
+}
+
+.survey1result-btn {
+  margin-right: 300px;
+  margin-top: 150px;
+  text-align: right;
+}
+
+.survey1result-btn button {
+  color: #004A2F;
+  border: none;
+  background-color: #E7E7E7;
+  font-size: 200%;
+  text-decoration: underline;
+}
+
+.survey1resultpg2 {
+  background-color: #004A2F;
+  height: 100vh;
+}
+
+.survey1resultpg2 h1 {
+  color: white;
+  margin: 100px 0px 0px 200px;
+}
+
+.survey1resultpg2 ul {
+  color: white;
+  margin: 100px 0px 0px 200px;
+  font-size: 150%;
+}
+
+.survey1resultpg2-num {
+  color: white;
+  font-size: 1000%;
+  margin: 50px auto 0px 350px;
+  opacity: 70%;
+}
+
+.survey1resultpg2-icon {
+  color: white;
+  opacity: 70%;
+  font-size: 500%;
+  margin: 200px 0px 0px 250px;
+}
+
+.survey1resultpg2-btn {
+  margin: 300px auto 0px 250px;
+}
+
+.survey1resultpg2-btn button {
+  color: white;
+  border: none;
+  background-color: #004A2F;
+  font-size: 200%;
+  text-decoration: underline;
+}
+
+.survey1resultpg2-btn a {
+  color: white;
+  border: none;
+  background-color: #004A2F;
+  font-size: 200%;
+  text-decoration: underline;
+}
+
+.survey1resultpg2-btn a:hover {
+  color: white;
 }
