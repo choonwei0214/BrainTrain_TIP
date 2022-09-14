@@ -6,7 +6,7 @@ import { Card } from 'antd';
 import { AiFillEye } from 'react-icons/ai';
 import { IoEarOutline } from 'react-icons/io5';
 import { FaRunning } from 'react-icons/fa';
-import { GiLion, GiBearFace, GiWolfHead, GiDolphin } from 'react-icons/gi';
+import { GiLion, GiPolarBear, GiWolfHead, GiDolphin } from 'react-icons/gi';
 
 const PersonalityCards = () => {
     const learningstyle = sessionStorage.getItem("learningstyle")
@@ -26,7 +26,7 @@ const PersonalityCards = () => {
                 </div><div>{mbti}</div><Link to="/startsurvey" state={{ name: "MBTI", time: "12 mins", route: "mbti" }}><button>Test it now!</button></Link></Card><div className='personalityExp'>To find out how our personality traits affect the way we learn interact with others</div></Col>
                 <Col><Card><h4>Chronotype</h4><div className="personalityImg">
                     {chronotype === "Lion" && <GiLion className='personalityCard-icon' />}
-                    {chronotype === "Bear" && <GiBearFace className='personalityCard-icon' />}
+                    {chronotype === "Bear" && <GiPolarBear className='personalityCard-icon' />}
                     {chronotype === "Wolf" && <GiWolfHead className='personalityCard-icon' />}
                     {chronotype === "Dolphin" && <GiDolphin className='personalityCard-icon' />}
                 </div><div>{chronotype}</div><Link to="/startsurvey" state={{ name: "Chronotype", time: "12 mins", route: "chronotype" }}><button>Test it now!</button></Link></Card><div className='personalityExp'>To find out more about your body clock, from your sleep schedule to your optimal productive periods</div></Col>

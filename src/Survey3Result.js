@@ -1,18 +1,18 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'antd';
-import { GiLion,GiBearFace,GiWolfHead,GiDolphin } from 'react-icons/gi';
+import { GiLion, GiPolarBear, GiWolfHead, GiDolphin } from 'react-icons/gi';
 
 const Survey3Result = (props) => {
-    let idx = Math.floor(Math.random() * 4)
+    let idx = 1
     if (idx === 0) {
-        sessionStorage.setItem("chronotype", "Lion")
+        sessionStorage.setItem("chronotype", "Bear")
     } else if (idx === 1) {
         sessionStorage.setItem("chronotype", "Bear")
     } else if (idx === 2) {
-        sessionStorage.setItem("chronotype", "Wolf")
+        sessionStorage.setItem("chronotype", "Bear")
     } else {
-        sessionStorage.setItem("chronotype", "Dolphin")
+        sessionStorage.setItem("chronotype", "Bear")
     }
     const lion = {
         type: "Lion",
@@ -48,11 +48,25 @@ const Survey3Result = (props) => {
 
 
     return (
+        // <div class="flip-card text-center">
+        //     <div class="flip-card-inner">
+        //         <div class="flip-card-front">
+        //             hi
+        //             <Button onClick={handleClick1}>Flip the card over!</Button>
+        //         </div>
+        //         <div class="flip-card-back">
+        //             <h1>John Doe</h1>
+        //             <p>Architect Engineer</p>
+        //             <p>We love that guy</p>
+        //             <Button onClick={handleClick2}>Flip the card over!</Button>
+        //         </div>
+        //     </div>
+        // </div>
         <div className="surveyresultpage">
             <Row>
                 <Col xs={4}>
                     {idx === 0 && <div className='text-center'><GiLion className="personality-icon"/></div>}
-                    {idx === 1 && <div className='text-center'><GiBearFace className="personality-icon"/></div>}
+                    {idx === 1 && <div className='text-center'><GiPolarBear className="personality-icon"/></div>}
                     {idx === 2 && <div className='text-center'><GiWolfHead className="personality-icon"/></div>}
                     {idx === 3 && <div className='text-center'><GiDolphin className="personality-icon"/></div>}
                 </Col>

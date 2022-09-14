@@ -3,11 +3,11 @@ import Col from 'react-bootstrap/Col';
 import { Button } from 'antd';
 
 const Survey2Result = (props) => {
-    let idx = Math.floor(Math.random() * 2)
+    let idx = 1
     if (idx === 0) {
         sessionStorage.setItem("mbti", "INFJ")
     } else if (idx === 1) {
-        sessionStorage.setItem("mbti", "ENTP")
+        sessionStorage.setItem("mbti", "INFJ")
     }
     const infj = {
         type: "INFJ",

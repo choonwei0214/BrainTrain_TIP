@@ -21,16 +21,16 @@ const SurveyResult = (props) => {
             no_3 = no_3 + 1
         }
     }
-    let idx;
+    let idx = 0;
     if (no_1 > no_2 && no_1 > no_3) {
         idx = 0
         sessionStorage.setItem("learningstyle", "Auditory")
     } else if (no_2 > no_1 && no_2 > no_3) {
         idx = 1
-        sessionStorage.setItem("learningstyle", "Visual")
+        sessionStorage.setItem("learningstyle", "Auditory")
     } else if (no_3 > no_1 && no_3 > no_2) {
         idx = 2
-        sessionStorage.setItem("learningstyle", "Kinesthetic")
+        sessionStorage.setItem("learningstyle", "Auditory")
     } else if (no_1 === no_2 && no_1 > no_3) {
         idx = 0
         sessionStorage.setItem("learningstyle", "Auditory")
@@ -39,7 +39,7 @@ const SurveyResult = (props) => {
         sessionStorage.setItem("learningstyle", "Auditory")
     } else if (no_2 === no_3 && no_2 > no_1) {
         idx = 0
-        sessionStorage.setItem("learningstyle", "Visual")
+        sessionStorage.setItem("learningstyle", "Auditory")
     }
 
     const auditory = {
