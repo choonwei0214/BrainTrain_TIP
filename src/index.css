@@ -658,6 +658,7 @@ span.habit-ind {
 
 .habit-ind li {
   font-size: large;
+  line-height: 0%;
 }
 
 /* .hab1 {
@@ -702,18 +703,27 @@ span.habit-ind {
 }
 
 .lsicon {
-  background-color: #EC9B00;
-  border: 3px solid white;
+  background-color: gray;
 }
 
 .mbtiicon {
-  background-color: #9A2325;
-  border: 3px solid white;
+  background-color: gray;
 }
 
 .chroicon {
+  background-color: gray;
+}
+
+.lsicon1 {
+  background-color: #EC9B00;
+}
+
+.mbtiicon1 {
+  background-color: #9A2325;
+}
+
+.chroicon1 {
   background-color: #015D72;
-  border: 3px solid white;
 }
 
 .flip-card {

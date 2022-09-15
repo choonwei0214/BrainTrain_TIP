@@ -87,10 +87,26 @@ const HabitTracker = () => {
 
 
     const habitClick = (e) => {
-        if (e.target.style.border === "3px solid rgb(77, 128, 109)") {
-            e.target.style.border = `3px solid white`;
+        if (e.target.style.backgroundColor === "rgb(236, 155, 0)") {
+            e.target.style.backgroundColor = "gray";
         } else {
-            e.target.style.border = "3px solid rgb(77, 128, 109)";
+            e.target.style.backgroundColor = "#EC9B00";
+        }
+    };
+
+    const habitClick2 = (e) => {
+        if (e.target.style.backgroundColor === "rgb(154, 35, 37)") {
+            e.target.style.backgroundColor = "gray";
+        } else {
+            e.target.style.backgroundColor = "rgb(154, 35, 37)";
+        }
+    };
+
+    const habitClick3 = (e) => {
+        if (e.target.style.backgroundColor === "rgb(1, 93, 114)") {
+            e.target.style.backgroundColor = "gray";
+        } else {
+            e.target.style.backgroundColor = "rgb(1, 93, 114)";
         }
     };
 
@@ -136,9 +152,9 @@ const HabitTracker = () => {
                     <div className='habittrackerBoard'>
                         <h2 className="text-center">Monday, Sept 12 - Friday, Sept 16</h2>
                         <div className="habit-indicator text-center">
-                            <span><span className="habit-ind lsicon"></span> Learning Style</span>
-                            <span><span className="habit-ind mbtiicon"></span> MBTI</span>
-                            <span><span className="habit-ind chroicon"></span> Chronotype</span>
+                            <span><span className="habit-ind lsicon1"></span> Learning Style</span>
+                            <span><span className="habit-ind mbtiicon1"></span> MBTI</span>
+                            <span><span className="habit-ind chroicon1"></span> Chronotype</span>
                         </div>
                         <div className="meter">
                             <div className='meter2'></div>
@@ -191,12 +207,12 @@ const HabitTracker = () => {
                                 {/* <div className='habit habit-4'></div>
                                 <div className='habit habit-5'></div> */}
                                 {habit_1 === "Habit 1" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_3 === "Habit 3" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_4 === "Habit 4" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
+                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_3 === "Habit 3" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_4 === "Habit 4" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_5 === "Habit 5" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_6 === "Habit 6" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_7 === "Habit 7" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Tue</h3>
@@ -206,12 +222,12 @@ const HabitTracker = () => {
                                 {/* <div className='habit habit-e'></div>
                                 <div className='habit habit-5'></div> */}
                                 {habit_1 === "Habit 1" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_3 === "Habit 3" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_4 === "Habit 4" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
+                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_3 === "Habit 3" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_4 === "Habit 4" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_5 === "Habit 5" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_6 === "Habit 6" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_7 === "Habit 7" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Wed</h3>
@@ -221,12 +237,12 @@ const HabitTracker = () => {
                                 {/* <div className='habit habit-4'></div>
                                 <div className='habit habit-5'></div> */}
                                 {habit_1 === "Habit 1" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_3 === "Habit 3" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_4 === "Habit 4" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
+                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_3 === "Habit 3" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_4 === "Habit 4" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_5 === "Habit 5" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_6 === "Habit 6" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_7 === "Habit 7" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Thu</h3>
@@ -236,12 +252,12 @@ const HabitTracker = () => {
                                 {/* <div className='habit habit-4'></div>
                                 <div className='habit habit-e'></div> */}
                                 {habit_1 === "Habit 1" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_3 === "Habit 3" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_4 === "Habit 4" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
+                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_3 === "Habit 3" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_4 === "Habit 4" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_5 === "Habit 5" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_6 === "Habit 6" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_7 === "Habit 7" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
                             </Col>
                             <Col className="text-center day">
                                 <h3>Fri</h3>
@@ -251,12 +267,12 @@ const HabitTracker = () => {
                                 {/* <div className='habit habit-4'></div>
                                 <div className='habit habit-5'></div> */}
                                 {habit_1 === "Habit 1" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_3 === "Habit 3" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_4 === "Habit 4" && <div className='habit habit-4 lsicon' onClick={habitClick}></div>}
-                                {habit_5 === "Habit 5" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_6 === "Habit 6" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
-                                {habit_7 === "Habit 7" && <div className='habit habit-4 chroicon' onClick={habitClick}></div>}
+                                {habit_2 === "Habit 2" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_3 === "Habit 3" && <div className='habit habit-4 lsicon' onClick={habitClick2}></div>}
+                                {habit_4 === "Habit 4" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_5 === "Habit 5" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_6 === "Habit 6" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
+                                {habit_7 === "Habit 7" && <div className='habit habit-4 mbtiicon' onClick={habitClick3}></div>}
                             </Col>
                         </Row>
                     </div>

@@ -19,10 +19,10 @@ const CalendarPage = () => {
                     <div className="profileMenu">
                         <h2 className="text-center">John Tan, 3A1</h2>
                         <div className="menu text-left">
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/"><AiOutlineMenu /> Dashboard</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
-                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#B3C9C1" })} to="/personality"><BsFillPersonFill /> Personality</NavLink>
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#669282" })} to="/"><AiOutlineMenu /> Dashboard</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#669282" })} to="/calendar"><AiOutlineCalendar /> Calendar</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#669282" })} to="/habittracker"><TiTick /> Habit tracker</NavLink><br />
+                            <NavLink style={({ isActive }) => ({ color: isActive ? "white" : "#669282" })} to="/personality"><BsFillPersonFill /> Personality</NavLink>
                         </div>
                     </div>
                 </Col>
