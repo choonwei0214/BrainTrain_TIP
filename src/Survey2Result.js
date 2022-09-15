@@ -2,6 +2,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'antd';
 import { MdEmojiPeople } from 'react-icons/md';
+import INFJphoto from './INFJ.jpeg';
+import INFJphoto2 from './INFJ2.jpeg';
 
 const Survey2Result = (props) => {
     let idx = 0;
@@ -32,8 +34,8 @@ const Survey2Result = (props) => {
             e.target.parentElement.parentElement.parentElement.style.transform = "rotateY(180deg)";
         } else {
             e.target.parentElement.parentElement.style.transform = "rotateY(180deg)";
-        }
-    };
+        };
+    }
 
     const handleClick2 = (e) => {
         if (e.target.nodeName === "SPAN") {
@@ -99,49 +101,13 @@ const Survey2Result = (props) => {
         //     </Row>
         // </div>
 
-        <div class="flip-card text-center">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <Button onClick={handleClick1}>Click here to flip!</Button>
-                    <Row>
-                        <Col>
-                            <div className="flip-card-icon"><MdEmojiPeople /></div>
-                            <h3>Description</h3>
-                            <p style={{margin: "10px 100px","font-size": "1.2rem"}}>INFJ are the advocates. Their ideals and principles are what keeps them going as they want to see a change for the greater good.</p>
-                            <div></div>
-                        </Col>
-                        <Col>
-                            <div className="text-center" style={{"margin-top": "50px"}}>
-                                <h1>INFJ</h1>
-                                <h1 style={{"background-color": "#004A2F","margin":"5px","border-radius":"20px",color:"white"}}>ADVOCATES</h1>
-                                <h2>Strengths</h2>
-                                <ul>
-                                    <li>Thoughtfully reflective</li>
-                                    <li>Reflective and impulsive</li>
-                                    <li>Risk-takers</li>
-                                    <li>Introverted and reserved</li>
-                                </ul>
-                                <h2>Weaknesses</h2>
-                                <ul>
-                                    <li>Sensitive to critism</li>
-                                    <li>Reserved</li>
-                                    <li>Perfectionist</li>
-                                    <li>Overly ambitious</li>
-                                    <li>Burnt out easily</li>
-                                </ul>
-                            </div>
-                        </Col>
-                    </Row>
+        <div className="flip-box">
+            <div className="flip-box-inner">
+                <div className="flip-box-front">
+                    <img src={INFJphoto} alt="INFJ" />
                 </div>
-                <div class="flip-card-back">
-                    <Button onClick={handleClick2}>Click here to flip!</Button>
-                    <h2>Things to note</h2>
-                    <ul>
-                        <li>Use analogies and acronyms instead of blank memorisation</li>
-                        <li>Are independent learners and prefer one-to-one consultation</li>
-                        <li>Get your hands on tougher questions to challenge yourself</li>
-                        <li>Wants freedom in their work structure and schedule</li>
-                    </ul>
+                <div className="flip-box-back">
+                    <img src={INFJphoto2} alt="INFJ2" />
                 </div>
             </div>
         </div>
