@@ -46,7 +46,7 @@ const Home = () => {
                             type="text"
                             icon={<CaretDownOutlined />}
                         /></p>
-                        <div id="chart"><TimeSpentChart /><div>1 hr 14 mins in class<br />12mins more than yesterday</div></div>
+                        <div id="chart"><TimeSpentChart /><div className="chartCap">1 hr 14 mins in class<br />12mins more than yesterday</div></div>
                     </div>
                 </Col>
                 <Col>

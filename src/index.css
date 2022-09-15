@@ -938,3 +938,7 @@ span.habit-ind {
   color: white;
   transform: rotateY(180deg);
 }
+
+.chartCap {
+  font-size: 80%;
+}
